@@ -1,0 +1,76 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "it1 it2 it3 it3"
+    "it1 it4 it3 it3"
+    "it1 it5 it6 it7"
+    "it8 it9 it9 it10";
+}
+
+article:first-child{
+  grid-area: it1;
+}
+
+article:nth-child(2){
+  grid-area: it2;
+}
+
+article:nth-child(3){
+  grid-area: it3;
+}
+
+article:nth-child(4){
+  grid-area: it4;
+}
+
+article:nth-child(5){
+  grid-area: it5;
+}
+
+article:nth-child(6){
+  grid-area: it6;
+}
+
+article:nth-child(7){
+  grid-area: it7;
+}
+
+article:nth-child(8){
+  grid-area: it8;
+}
+
+article:nth-child(9){
+  grid-area: it9;
+}
+
+article:last-child{
+  grid-area: it10;
+}
